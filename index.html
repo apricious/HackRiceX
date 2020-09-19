@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Library Locator 2000</title>
+    <title>The Library Locator</title>
     <link href="style.css" rel="stylesheet"/>
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-    <div class="homepage">
-        <h1>The Library Locator 2000!</h1>
+    <div class="mainpage">
+        <h1>The Library Locator</h1>
 
-        <img src="C:/Users/brain/OneDrive/Desktop/Rice/HackRiceX_2020/HackRiceX/images/logo.jpg" alt="Library Logo">
+        <img src="images/logo.jpg" alt="Library Logo">
 
         <h2>What are you looking for?</h2>
 
         <input v-model="username" type="text">
-        <button v-on:click="greet">Search</button>
+        <button v-on:click="search">Search</button>
 
-        <h2>About Us</h2>
+        <h2><a href="map-blueprint.html">See Map</a></h2>
+
+        <h2><a href="about-us.html">About Us</a></h2>
     </div>
     <script src="app.js"></script>
 </body>
