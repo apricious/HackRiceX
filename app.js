@@ -10,6 +10,7 @@ new Vue({
             this.greeting = "Hi, "
             this.greeting = this.greeting.concat(this.username, "!")
             this.greeting = this.greeting.concat(" I'd also like to take this opportunity to greet the world!")
+            this.greeting = "Nope!"
         }
     }
 });
