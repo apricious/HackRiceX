@@ -13,6 +13,8 @@ new Vue({
             this.greeting = "Nope!"
 
             var hello = 5;
+
+            // Hello this is Kenton.
         }
     }
 });
