@@ -19,16 +19,25 @@ body {
     color: black;
     overflow: hidden;
     margin: 30px;
+    padding: 10px 10px;
+    border: 2px solid #2a537d;
 }
 
 .topnav a {
     color: black;
     text-align: center;
     font-size: 24px;
+    padding: 14px;
 }
 
 img {
     max-width: 100%;
     height: auto;
     padding: 5px;
+}
+
+.thumbnail {
+    max-height: 50px;
+    width: auto;
+    padding: 3px;
 }
