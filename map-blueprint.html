@@ -11,48 +11,47 @@
   </head>
   <body>
     <div class="mainpage">
-    <div class="topnav">
-      <a href="index.html">
-          <img class="thumbnail" src="images/logo.jpg" alt="Library Logo">
-      </a>
-      <a class="titletext" href="index.html">Library Locator</a>
-      <a href="map-blueprint.html">Map</a>
-      <a href="about-us.html">About Us</a>
-      <a href="submit-locations.html">Submissions</a>
-    </div>
-    
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
+      <div class="topnav">
+        <a href="index.html">
+            <img class="thumbnail" src="images/logo.jpg" alt="Library Logo">
+        </a>
+        <a class="titletext" href="index.html">Library Locator</a>
+        <a href="map-blueprint.html">Map</a>
+        <a href="about-us.html">About Us</a>
+        <a href="submit-locations.html">Submissions</a>
+      </div>
+      
+      <h3>Your Map</h3>
+      <!--The div element for the map -->
+      <div id="map"></div>
 
-    
-    <h1>Enter Current Coordinates</h1>
+      
+      <h1>Enter Current Coordinates</h1>
 
-    <h2>Enter Latitude</h2>
-    <input type="text" id="Latitude" name="Latitude">
+      <h2>Enter Latitude</h2>
+      <input type="text" id="Latitude" name="Latitude">
 
-    <h2>Enter Longitude</h2>
-    <input type="text" id="Longitude" name="Longitude">
+      <h2>Enter Longitude</h2>
+      <input type="text" id="Longitude" name="Longitude">
 
-    <button onclick="initMap()">Submit</button>
+      <button onclick="initMap()">Submit</button>
 
-    <script>
-// Initialize and add the map
+      <script>
+      // Initialize and add the map
 
-
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 131.0369, lng: 25.3444};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3uZURxV3ItKIUcVfIBo-xDCjDWvYTeiw&callback=initMap">
-    </script>
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 131.0369, lng: 25.3444};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+      </script>
+      <script defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3uZURxV3ItKIUcVfIBo-xDCjDWvYTeiw&callback=initMap">
+      </script>
     </div>
   </body>
 </html>
