@@ -3,7 +3,7 @@
     $username = "username";
     $password = "password";
 
-    $connection = new mysql($serverName, $username, $password);
+    $connection = new mysqli($serverName, $username, $password);
 
 
     if ($connection -> connect_error){
