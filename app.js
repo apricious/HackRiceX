@@ -14,7 +14,6 @@ new Vue({
 
             var hello = 5;
 
-            // Hello this is Kenton.
         }
     }
 });
