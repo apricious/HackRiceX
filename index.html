@@ -8,12 +8,17 @@
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
+    <div class="topnav">
+        <a class = "titletext" href="index.html">Library Locator</a>
+        <a href="map-blueprint.html">Map</a>
+        <a href="about-us.html">About Us</a>
+    </div>
     <div class="mainpage">
         <h1>The Library Locator</h1>
 
         <img src="images/logo.jpg" alt="Library Logo">
 
-        <h2>What are you looking for?</h2>
+        <h2>Enter a Zip Code for Libraries in Your Area</h2>
 
         <input v-model="username" type="text">
         <button v-on:click="search">Search</button>
