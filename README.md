@@ -6,7 +6,7 @@ The world has never been more literate, and yet many communities struggle with p
 
 ## HOW TO USE
 
-
+In the current situation, that is to say sans server, the storing and accessing of information only happens on a single device.
 
 ## Implimentation of Google Maps API
 
