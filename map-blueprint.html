@@ -39,6 +39,8 @@
 
       <script>
         function submitCoords(){
+          initMap(document.getElementById("Longitude").value, document.getElementById("Longitude").value);
+
           document.getElementById("Latitude").value = null;
           document.getElementById("Longitude").value = null;
         }
@@ -46,9 +48,9 @@
 
       // Initialize and add the map
 
-        function initMap() {
+        function initMap(latt, long) {
           // The location of Uluru
-          var uluru = {lat: 131.0369, lng: 25.3444};
+          var uluru = {lat: parseFloat(latt), lng: parseFloat(long)};
           // The map, centered at Uluru
           var map = new google.maps.Map(
               document.getElementById('map'), {zoom: 4, center: uluru});
