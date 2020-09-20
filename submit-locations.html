@@ -40,21 +40,28 @@
                 var latitude = document.getElementById("Latitude");
                 var longitude = document.getElementById("Longitude");
 
-                var submission = name.value + "," + latitude.value + "," + longitude.value + ";";
+                let submission = name.value + "," + latitude.value + "," + longitude.value + ";";
 
-                var textToBlob = new Blob([submission], { type: 'text/plain' });
-                var submissionFile = "submission.txt"; // the location of all submissions
+                const fs = require('fs');
 
-                textFile = window.URL.createObjectURL(submission);
+                fs.writeFile('submission.txt', submission, (error) => {
 
-                //returns URL
-                return textFile;
+                    if (error) throw err;
+                }
+
+                // var textToBlob = new Blob([submission], { type: 'text/plain' });
+                // var submissionFile = "submission.txt"; // the location of all submissions
+
+                // textFile = window.URL.createObjectURL(submissionFile);
+
+                // returns URL
+                // return textFile;
 
                 // add feedback to user for completed submission
                 
-                // document.getElementById("LibraryName").value = null;
-                // document.getElementById("Latitude").value = null;
-                // document.getElementById("Longitude").value = null;
+                document.getElementById("LibraryName").value = null;
+                document.getElementById("Latitude").value = null;
+                document.getElementById("Longitude").value = null;
                 
 
                 // return coords;
