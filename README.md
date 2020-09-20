@@ -6,7 +6,7 @@ The world has never been more literate, and yet many communities struggle with p
 
 ## HOW TO USE
 
-In the current situation, that is to say sans server, the storing and accessing of information only happens on a single device.
+In the current situation, that is to say sans server, the storing and accessing of information was too difficult to figure out. However, you can use the API plugin to find the point on the map given latitude and longitude as well as send in latitude and longitude to a future database.
 
 ## Implimentation of Google Maps API
 
