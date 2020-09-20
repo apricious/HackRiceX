@@ -44,20 +44,11 @@
 
                 const fs = require('fs');
 
+                // as of now, this does NOT properly write to a file.
                 fs.writeFile('submission.txt', submission, (error) => {
 
                     if (error) throw err;
                 })
-
-                // var textToBlob = new Blob([submission], { type: 'text/plain' });
-                // var submissionFile = "submission.txt"; // the location of all submissions
-
-                // textFile = window.URL.createObjectURL(submissionFile);
-
-                // returns URL
-                // return textFile;
-
-                // add feedback to user for completed submission
                 
                 document.getElementById("LibraryName").value = null;
                 document.getElementById("Latitude").value = null;
