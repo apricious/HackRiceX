@@ -36,15 +36,14 @@
                 // + document.getElementById("Latitude").value
                 // + ", " + document.getElementById("Longitude").value;
 
-                const name = document.getElementById("LibraryName");
-                const latitude = document.getElementById("Latitude");
-                const longitude = document.getElementById("Longitude");
+                var name = document.getElementById("LibraryName");
+                var latitude = document.getElementById("Latitude");
+                var longitude = document.getElementById("Longitude");
 
-                let submission = 
-                    name.value + "," + latitude.value + "," + longitude + ";";
+                var submission = name.value + "," + latitude.value + "," + longitude.value + ";";
 
-                const textToBlob = new Blob([submission], { type: 'text/plain' });
-                const submissionFile = "submission.txt"; // the location of all submissions
+                var textToBlob = new Blob([submission], { type: 'text/plain' });
+                var submissionFile = "submission.txt"; // the location of all submissions
 
                 textFile = window.URL.createObjectURL(submission);
 
