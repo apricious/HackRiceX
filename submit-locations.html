@@ -18,28 +18,47 @@
         </div>
         
         <div class="mainpage">
-            <h1>
-                Submit Library Locations
-            </h1>
+            <h1>Submit Library Locations</h1>
 
-            <h2>Enter Latitude</h2>
+            <h2>Enter the Library Name:</h2>
+            <input type="text" id="LibraryName" name="LibraryName">
+            <h2>Enter Latitude:</h2>
             <input type="text" id="Latitude" name="Latitude">
-
-            <h2>Enter Longitude</h2>
+            <h2>Enter Longitude:</h2>
             <input type="text" id="Longitude" name="Longitude">
 
-            <button onclick="getLocation()">Submit Coordinates</button>
+            <button onclick="submitLocation()">Submit Coordinates</button>
         </div>
 
         <script>
-            function getLocation() {
-                var coords = document.getElementById("Latitude").value
-                + " " + document.getElementById("Longitude").value;
+            function submitLocation() {
+                // var coords = document.getElementById("LibraryName").value + ","
+                // + document.getElementById("Latitude").value
+                // + ", " + document.getElementById("Longitude").value;
 
-                document.getElementById("Latitude").value = null;
-                document.getElementById("Longitude").value = null;
+                const name = document.getElementById("LibraryName");
+                const latitude = document.getElementById("Latitude");
+                const longitude = document.getElementById("Longitude");
 
-                return coords;
+                let submission = 
+                    name.value + "," + latitude.value + "," + longitude + ";";
+
+                const textToBlob = new Blob([submission], { type: 'text/plain' });
+                const submissionFile = "submission.txt"; // the location of all submissions
+
+                textFile = window.URL.createObjectURL(submission);
+
+                //returns URL
+                return textFile;
+
+                // add feedback to user for completed submission
+                
+                // document.getElementById("LibraryName").value = null;
+                // document.getElementById("Latitude").value = null;
+                // document.getElementById("Longitude").value = null;
+                
+
+                // return coords;
             }
         </script>
     </body>
