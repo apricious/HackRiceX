@@ -35,9 +35,15 @@
       <h2>Enter Longitude</h2>
       <input type="text" id="Longitude" name="Longitude">
 
-      <button onclick="initMap()">Submit</button>
+      <button onclick="submitCoords()">Submit</button>
 
       <script>
+        function submitCoords(){
+          document.getElementById("Latitude").value = null;
+          document.getElementById("Longitude").value = null;
+        }
+
+
       // Initialize and add the map
 
         function initMap() {
