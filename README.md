@@ -19,15 +19,9 @@ Currently the user must input exact coordinates of the box, which is not ideal. 
 The database that we have is also only on a single local computer, meaning that the computer hosting the database has to stay on at all times. In the future, this could be put into a real database server with a better storing method.
 It is also difficult to put in a zip code and find all of the little libraries in the nearby vicinity for the moment, but if given a little more time it is completely reasonable that users could put restrictions on a radius they are searching in.
 And, of course, there is always beautifying the website.
-
-
 <br />
-
-
-
-
-
-
+<br />
+<br />
 # HackRice X | First Timer's Track
 
 ## Track Description
