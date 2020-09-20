@@ -38,7 +38,7 @@
       <button onclick="submitCoords()">Submit</button>
 
       <script>
-
+        var map = null;
         window.addEventListener("load", function(){
           initMap(29.7174, -95.4018);
         });
@@ -57,10 +57,16 @@
           // The location of Uluru
           var uluru = {lat: parseFloat(latt), lng: parseFloat(long)};
           // The map, centered at Uluru
-          var map = new google.maps.Map(
+          map = new google.maps.Map(
               document.getElementById('map'), {zoom: 4, center: uluru});
           // The marker, positioned at Uluru
           var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+
+        function addLibraries(coords, map) {
+          coords.forEach(element => {
+            var marker = new google.maps.Marker({position: coords, map: map});
+          });
         }
       </script>
       <script defer
