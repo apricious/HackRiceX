@@ -1,3 +1,33 @@
+# Library Locator
+
+## Introduction and Problem
+
+The world has never been more literate, and yet many communities struggle with providing their children with an adequate level of education. In order to help combat this, there has been a growing movement toward "Little Libraries," or small mail-box like structures that encourage those interested in exchanging books. However, a lot of these structures are not on a map since that would involve a formal method of submission. Our website's goal is to help people find these small exchange libraries within their neighborhood by having others in the community report the locations of the library.
+
+## HOW TO USE
+
+
+
+## Implimentation of Google Maps API
+
+We are using Google Maps' API in order to both put a map onto our website as well as to allow users' submissions to appear on the map based on our small database.
+Since our project revolves mainly around a website, we did most of our coding in html, css, javascript, and php.
+
+## Improvements for the Future
+
+Currently the user must input exact coordinates of the box, which is not ideal. Ideally, users would simply tap a button on the website and it would take the location of the device and automatically put it up on the website's database.
+The database that we have is also only on a single local computer, meaning that the computer hosting the database has to stay on at all times. In the future, this could be put into a real database server with a better storing method.
+It is also difficult to put in a zip code and find all of the little libraries in the nearby vicinity for the moment, but if given a little more time it is completely reasonable that users could put restrictions on a radius they are searching in.
+And, of course, there is always beautifying the website.
+
+
+
+
+
+
+
+
+
 # HackRice X | First Timer's Track
 
 ## Track Description
