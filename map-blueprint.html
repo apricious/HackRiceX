@@ -38,6 +38,11 @@
       <button onclick="submitCoords()">Submit</button>
 
       <script>
+
+        window.addEventListener("load", function(){
+          initMap(29.7174, -95.4018);
+        });
+
         function submitCoords(){
           initMap(document.getElementById("Longitude").value, document.getElementById("Longitude").value);
 
